@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <form>
+      <!-- A dropdown menu for feedback type. -->
+      <label for="feedback">Select your feedback type: </label>
+      <select name="feedbackType" id="feedback">
+        <option value="feedback">Feedback</option>
+        <option value="bugReporting">Report a bug</option>
+        <option value="suggestion">Suggestion</option>
+      </select>
+      <br /><br />
+      <!-- A text area for user's message. -->
+      <textarea
+        name="userMessage"
+        placeholder="Write your feedback here"
+        rows="4"
+        cols="40"
+      ></textarea>
+      <br />
+      <!-- Radio buttons for website rating. -->
+      <p>Rate our website</p>
+      <label for="5">5</label>
+      <input type="radio" name="ratingByUser" id="5" />
+      <label for="4">4</label>
+      <input type="radio" name="ratingByUser" id="4" />
+      <label for="3">3</label>
+      <input type="radio" name="ratingByUser" id="3" />
+      <label for="2">2</label>
+      <input type="radio" name="ratingByUser" id="2" />
+      <label for="1">1</label>
+      <input type="radio" name="ratingByUser" id="1" />
+      <br /><br />
+      <!-- An input for age, type: number. It should allow numbers from 10 to 100. -->
+      <label for="age">Enter your age: </label>
+      <input type="number" name="userAge" id="age" min="10" max="100" />
+      <br /><br />
+      <!-- An email input field. This field is mandatory. -->
+      <label for="email">Enter your emailId: </label>
+      <input type="email" name="userEmail" id="email" required />
+      <br /><br />
+      <!-- A password input field. Ensure a minimum length of 8 characters. -->
+      <label for="password">Password: </label>
+      <input type="password" name="userPassword" id="password" minlength="8" />
+      <br /><br />
+      <!-- An optional website URL input field. -->
+      <label for="profile"
+        >Share your social profile for colaboration purpose: </label
+      ><br />
+      <input type="url" name="userProfile" id="profile" />
+      <br /><br />
+      <!-- A checkbox for terms and conditions. -->
+      <input type="checkbox" name="userAgreed" id="terms" />
+      <label for="terms">Terms and Condition</label>
+      <br /><br />
+      <!-- A submission button. -->
+      <input type="submit" />
+    </form>
+  </body>
+</html>
